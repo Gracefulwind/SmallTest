@@ -2,6 +2,8 @@ package com.wind.smalltest.questions;
 
 import com.wind.smalltest.answers.MathAnswers;
 
+import java.util.regex.Pattern;
+
 /**
  * Created by Gracefulwind Wang on 2018/8/6.
  * Email : Gracefulwindbigwang@gmail.com
@@ -35,4 +37,11 @@ public class MathQuestions {
         System.out.println(MathAnswers.doQuestion1(data4));
     }
 
+    public static void question2() {
+        String str = "92123456788";
+        String regPattern = "^92\\d{9}$";
+        String regPattern1 = "92\\d{9}$";
+        System.out.println("reg:" + Pattern.matches(regPattern, str));
+        System.out.println("reg1:" + Pattern.matches(regPattern1, str));
+    }
 }

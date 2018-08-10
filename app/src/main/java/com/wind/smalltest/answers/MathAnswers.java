@@ -46,8 +46,8 @@ public class MathAnswers {
                 curMax = i;
                 startTemp = index;
                 endTemp = index;
-            }// 如果当前和大于0，累加当前和
-            else {
+            // 如果当前和大于0，累加当前和
+            }else {
                 curMax += i;
                 endTemp = index;
             }
